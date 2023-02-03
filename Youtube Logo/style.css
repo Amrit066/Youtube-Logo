@@ -1,0 +1,89 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Merriweather&family=Montserrat:wght@200&family=PT+Serif&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@200&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Merriweather&family=Montserrat:wght@200&family=Neonderthaw&family=PT+Serif&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@200&family=Sacramento&display=swap');
+
+/* Color Variables */
+:root{
+  --red-color:rgba(255,0,0,255);
+  --coral-color:rgba(255,103,90,255);
+  --purple-color:rgba(175,74,255,255);
+  --sky-color:rgba(0,190,255,255);
+  --green-color:rgba(0,212,123,255);
+  --black-color:rgba(53,53,53,255);
+  --white-color:rgba(255,255,255,255);
+  --text-color:rgba(240,240,240,0.9);
+
+}
+
+/* White-Theme Color Variables*/
+.white-theme{
+  --black-color:rgba(255,255,255,1);
+}
+
+
+
+/* Universal style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(0,0,0,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer-container{
+  width: 14rem;
+  height: 14rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-container{
+  width: 90%;
+  height: 90%;
+  background-color: var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.red-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 55%;
+  border-radius: 1.2rem;
+  background-color: var(--red-color);
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-left: 35px solid white;
+  /* border-right: 25px solid transparent; */
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  margin-left: 7%;
+}
+
+h3{
+  font-size: 1rem;
+  color: var(--text-color);
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+span{
+  color: var(--sky-color);
+  /* font-family: 'Neonderthaw', cursive; */
+}
